@@ -61,7 +61,7 @@ func main() {
 	key, _ := hex.DecodeString("6368616e676520746869732070617373776f726420746f206120736563726574")
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Digite a mensagem: ")
-	fmt.Print("->")
+	fmt.Print("-> ")
 	msg, _ := reader.ReadString('\n')
 
 	encryptedMsg, iv := encrypt(key, msg)
